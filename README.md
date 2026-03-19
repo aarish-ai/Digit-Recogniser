@@ -1,10 +1,10 @@
-# 🔢 Digit Recognition — MNIST
+#  Digit Recognition — MNIST
 
 A complete machine learning pipeline that trains a **Convolutional Neural Network (CNN)** on the MNIST dataset to recognize and classify handwritten digits (0–9) with ~99% test accuracy.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Digit Recognition/
@@ -22,7 +22,7 @@ Digit Recognition/
 
 ---
 
-## 🧠 Model Architecture
+##  Model Architecture
 
 A compact **CNN** with 3 convolutional blocks followed by a dense classifier head:
 
@@ -46,7 +46,7 @@ Input (28×28×1)
 
 ---
 
-## 🔄 Pipeline Overview
+##  Pipeline Overview
 
 | Step | Description |
 |------|-------------|
@@ -85,7 +85,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Running the Script
+##  Running the Script
 
 ```bash
 python digit_recognition.py
@@ -95,7 +95,7 @@ The first run will automatically download the MNIST dataset (~11 MB) to your Ker
 
 ---
 
-## 📊 Expected Output
+##  Expected Output
 
 ```
 =======================================================
@@ -134,7 +134,7 @@ Per-class Classification Report:
 
 ---
 
-## ♻️ Reusing the Trained Model
+##  Reusing the Trained Model
 
 Load and run inference with the saved model:
 
@@ -155,7 +155,7 @@ print(f"Predicted digit: {prediction[0]}")
 
 ---
 
-## 📈 Results Summary
+##  Results Summary
 
 | Metric | Value |
 |--------|-------|
@@ -166,7 +166,7 @@ print(f"Predicted digit: {prediction[0]}")
 
 ---
 
-## 📌 Notes
+##  Notes
 
 - **Data augmentation** (rotation, zoom, shift) is applied only during training to improve robustness against real-world handwriting variation.
 - **EarlyStopping** automatically halts training when validation accuracy stops improving, restoring the best weights.
